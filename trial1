@@ -1,2 +1,6 @@
 if img2.size[0] > img1.size[0] or img2.size[1] > img1.size[1]:
     raise ValueError('Images must have the same sizes')
+
+pixel_map1 = img1.load()
+pixel_map2 = img2.load()
+#hena be create a pixel map lelsorteen
