@@ -1,0 +1,22 @@
+ students.insertLinear("9", "Sarah"); // 57 % 11 = 2
+ students.insertLinear("86", "Maha"); // 110 % 11 = 0 // 56 + 54 = 110
+ students.insertLinear("5", "Ahmed"); // 53 % 11 = 9
+ students.insertLinear("29", "Loaa"); // 107 % 11 = 8 // 50 + 57 = 107
+ students.insertLinear("2", "Osama"); // 50 % 11 = 6
+ students.insertLinear("65", "Ali"); // 107 % 11 = 8 // 54 + 53 = 107
+ students.insertLinear("9", "Farah"); // 57 % 11 = 2
+ cout << "After Insertion:" << endl;
+ cout<<students<<endl;
+    
+ cout << endl;
+    
+ cout << "Search on ID 65: " << endl;
+ cout<<students.searchLinear("65")<<endl;
+    
+ students.removeLinear("29");
+ students.removeLinear("5");
+ students.removeLinear("86");
+ students.removeLinear("65");
+ cout << "After Deletion:" << endl;
+ cout<<students<<endl;;
+
