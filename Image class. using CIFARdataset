@@ -61,6 +61,7 @@ cnn = models.Sequential([
     layers.Dense(10, activation='softmax')
 
 ])
+//build CNN to train our images
 cnn.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
