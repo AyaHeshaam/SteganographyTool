@@ -12,3 +12,14 @@ plt.matshow(X_train[0])
 y_train[0]
 X_train = X_train / 255
 X_test = X_test / 255
+model = keras.Sequential([
+    keras.layers.Flatten(input_shape=(28, 28)),
+    keras.layers.Dense(100, activation='relu'),
+    keras.layers.Dense(10, activation='sigmoid')
+])
+
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+model.fit(X_train, y_train, epochs=10)
