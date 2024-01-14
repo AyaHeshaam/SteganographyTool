@@ -23,3 +23,22 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 model.fit(X_train, y_train, epochs=10)
+model.evaluate(X_test,y_test)
+X_train = X_train.reshape(-1,28,28,1)
+X_train.shape
+X_test = X_test.reshape(-1,28,28,1)
+X_test.shape
+model = keras.Sequential([
+    
+    layers.Conv2D(30, (3,3), activation='relu', input_shape=(28, 28, 1)),
+    layers.MaxPooling2D((2,2)),
+ 
+    layers.Flatten(),
+    layers.Dense(100, activation='relu'),
+    keras.layers.Dense(10, activation='sigmoid')
+])
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+model.fit(X_train, y_train, epochs=5)
