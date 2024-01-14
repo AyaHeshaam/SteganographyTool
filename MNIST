@@ -8,3 +8,7 @@ import numpy as np
 X_train.shape
 X_test.shape
 X_train[0].shape
+plt.matshow(X_train[0])
+y_train[0]
+X_train = X_train / 255
+X_test = X_test / 255
