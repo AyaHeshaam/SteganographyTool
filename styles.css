@@ -61,7 +61,7 @@ border-style: solid;
   }
   
   .form-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.75rem;
     font-weight: 600;
     text-align: center;
@@ -84,7 +84,7 @@ border-style: solid;
     padding-right: 3rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    width: 300px;
+    width: 350px;
     border-radius: 0.5rem;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
@@ -169,10 +169,11 @@ border-style: solid;
   }
   
   .animation {
-   padding-left: 550;
+    display: flex;
+   padding-left: 460;
     font: bold 200% Consolas, Monaco, monospace;
     border-right: .1em solid black;
-    width: 28ch;
+    width: 41ch;
     margin: 2em 2em;
     white-space: nowrap;
     overflow: hidden;
